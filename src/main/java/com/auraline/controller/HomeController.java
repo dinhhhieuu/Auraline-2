@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class HomeController {
 	
-	@GetMapping({"/","/trang-chu"})
+	@GetMapping({"/","/index"})
 	public String home(Model model) {
 		return "home/index";
 	}
@@ -30,5 +30,10 @@ public class HomeController {
 	@GetMapping("/product")
 	public String product(Model model) {
 		return "home/product";
+	}
+	
+	@GetMapping("/404")
+	public String error404(Model model) {
+		return "home/404";
 	}
 }

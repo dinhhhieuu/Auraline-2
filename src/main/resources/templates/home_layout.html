@@ -48,19 +48,22 @@
 	th:href="@{/assets/libs/owl-carousel/assets/owl.carousel.min.css}">
 
 <!-- Template CSS -->
-<link rel="stylesheet"
-      th:href="@{/assets/css/style.css}">
+<link rel="stylesheet" th:href="@{/assets/css/style.css}">
 
-<link rel="stylesheet"
-      th:href="@{/assets/css/responsive.css}">
+<link rel="stylesheet" th:href="@{/assets/css/responsive.css}">
+</head>
 <body id="home">
+
 
 
 	<div th:replace="~{home/fragments/nav_bar::nav_bar}">Nav Bar</div>
 
-	<div id="page-content" layout:fragment="page_content">Nội dung</div>
+	<div th:replace="~{home/fragments/menu_mobile::menu_mobile}">
+		Mobile</div>
 
-	<div th:replace="~{home/fragments/footer::footer}">Phần Footer</div>
+	<div id="page-content" layout:fragment="page_content">Content</div>
+
+	<div th:replace="~{home/fragments/footer::footer}">Footer</div>
 
 
 
@@ -91,8 +94,6 @@
 
 	<script th:src="@{/assets/libs/slider-range/js/jquery.slider.js}"></script>
 
-	<!-- Template JS -->
-	<script th:src="@{/assets/js/theme.js}"></script>
 
 	<!-- Template JS -->
 	<script src="/assets/js/theme.js"></script>
