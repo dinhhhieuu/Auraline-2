@@ -13,10 +13,16 @@
 			<div id="content-wrapper" class="full-width">
 				<div id="main">
 					<section class="page-home">
+						<div
+							th:replace="~{home/fragments/product_section_brands::product_section_brands}"></div>
+						<div
+							th:replace="~{home/fragments/product_section_customer::product_section_customer}"></div>
 						<div class="container">
+							<div th:replace="~{home/fragments/best_seller::best_seller}"></div>
+							<div th:replace="~{home/fragments/recent_post::blog}"></div>
+							<div th:replace="~{home/fragments/brand_logos::brand_logo}"></div>
+							<div th:replace="~{home/fragments/review::review}"></div>
 							<div th:replace="~{home/fragments/policy::policy}"></div>
-							<div
-								th:replace="~{home/fragments/product_section_female::product_section_female}"></div>
 						</div>
 					</section>
 				</div>

@@ -63,3 +63,81 @@
 .user-wishlist #wrapper-site #block-history thead th {
   border-color: rgba(255, 255, 255, 0.1);
 }
+
+
+.title-tab-content{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:20px;
+    width:100%;
+}
+
+
+.wibkit{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:15px;
+    padding-left:0;
+    margin-bottom:0;
+}
+
+.wibkit li{
+    list-style:none;
+}
+
+.wibkit a{
+    text-decoration:none;
+}
+
+
+.filter-sortby{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-left:auto;
+}
+
+.filter-sortby select{
+    min-width:180px;
+}
+
+
+.content-filter{
+    margin-top:25px;
+}
+
+.content-filter .row{
+    display:flex;
+    align-items:flex-start;
+}
+
+.content-filter ul{
+    padding-left:0;
+    margin-bottom:0;
+}
+
+.content-filter li{
+    list-style:none;
+    margin-bottom:10px;
+}
+
+.tiva-filter-title{
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+@media(max-width:768px){
+
+    .title-tab-content{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .filter-sortby{
+        margin-left:0;
+        flex-wrap:wrap;
+    }
+
+}
