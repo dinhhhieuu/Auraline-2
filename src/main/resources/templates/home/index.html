@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org"
-      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-      layout:decorate="~{home_layout}">
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{home_layout}">
 <head>
-    <meta charset="UTF-8">
-    <title>Trang chủ</title>
+<meta charset="UTF-8">
+<title>Trang chủ</title>
 </head>
 <body>
-    <div layout:fragment="page_content">
-        <div th:replace="~{home/fragments/slide_show::slide_show}"></div>
-    </div>
+	<div layout:fragment="page_content">
+		<div th:replace="~{home/fragments/slide_show::slide_show}"></div>
+		<div id="wrapper-site">
+			<div id="content-wrapper" class="full-width">
+				<div id="main">
+					<section class="page-home">
+						<div class="container">
+							<div th:replace="~{home/fragments/policy::policy}"></div>
+							<div
+								th:replace="~{home/fragments/product_section_female::product_section_female}"></div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 </body>
 </html>
