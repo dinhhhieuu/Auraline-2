@@ -56,5 +56,20 @@ public class HomeController {
 	public String checkout(Model model) {
 		return "home/check_out";
 	}
+	
+	@GetMapping("/user-account")
+	public String userAccount(Model model) {
+		return "home/user_account";
+	}
+	
+	@GetMapping("/login")
+	public String login(Model model) {
+		return "home/login";
+	}
+	
+	@GetMapping("/register")
+	public String register(Model model) {
+		return "home/register";
+	}
 
 }
