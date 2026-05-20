@@ -36,4 +36,25 @@ public class HomeController {
 	public String error404(Model model) {
 		return "home/404";
 	}
+	
+	@GetMapping("/news")
+	public String news(Model model) {
+		return "home/news";
+	}
+	
+	@GetMapping("/news-detail")
+	public String news_detail(Model model) {
+		return "home/news_detail";
+	}
+	
+	@GetMapping("/cart")
+	public String cart(Model model) {
+		return "home/cart";
+	}
+	
+	@GetMapping("/check-out")
+	public String checkout(Model model) {
+		return "home/check_out";
+	}
+
 }
